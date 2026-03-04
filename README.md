@@ -7,6 +7,12 @@ A collection of [Cursor Agent Skills](https://cursor.com/docs/context/skills) yo
 | Skill | Description |
 |-------|-------------|
 | [abacus-ai](abacus-ai/) | Abacus.AI API & platform: RouteLLM (chat, tools, image gen), datasets, document retrievers, knowledge bases |
+| [telnyx-python](telnyx-python/) | Telnyx API (Python): messaging, voice, numbers, AI, IoT, account, and more (all products) |
+| [telnyx-javascript](telnyx-javascript/) | Telnyx API (JavaScript/Node): same product set as Python |
+| [telnyx-twilio-migration](telnyx-twilio-migration/) | Migrate from Twilio to Telnyx (TwiML→TeXML, SMS, WebRTC, Verify, etc.) |
+| [telnyx-webrtc-client](telnyx-webrtc-client/) | WebRTC client SDKs: JS, iOS, Android, Flutter, React Native |
+
+Telnyx skills are from [team-telnyx/telnyx-skills](https://github.com/team-telnyx/telnyx-skills); see their README for the full product list and Agent Skills spec.
 
 ## How to use
 
@@ -31,6 +37,14 @@ cp -r abacus-ai ~/.cursor/skills/
 ```
 
 Restart Cursor (or reload the window) so it picks up the skill.
+
+### Telnyx skills
+
+- **All Python skills:** `cp -r telnyx-python/* ~/.cursor/skills/` (or into `your-project/.cursor/skills/`).
+- **All JavaScript skills:** `cp -r telnyx-javascript/* ~/.cursor/skills/`.
+- **Single product (e.g. messaging in Python):** `cp -r telnyx-python/telnyx-messaging-python ~/.cursor/skills/`.
+- **Twilio migration:** `cp -r telnyx-twilio-migration ~/.cursor/skills/`.
+- **WebRTC client (e.g. JS):** `cp -r telnyx-webrtc-client/telnyx-webrtc-client-js ~/.cursor/skills/`.
 
 ## Adding skills
 
